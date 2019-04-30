@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+<p id="hienthi"></p>
+Kết quả tính tổng:<p id="Tong"></p>
+<script>
+    let tong=0;
+    let number=parseInt(prompt("Nhập số"));
+    while (number!=-1) {
+        document.getElementById("hienthi").innerHTML+="số vừa nhập là" + number +"<br/>";
+        tong+=number;
+        number=parseInt(prompt("Nhập số"));
+
+    }
+    document.getElementById("Tong").innerHTML=tong;
+</script>
+</body>
+</html>
